@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
-    <bean id="scraper" class="org.pgp.scrape.PineDatabaseScraper">
-        <constructor-arg name="host" value="localhost"/>
-        <constructor-arg name="user" value="root"/>
-        <constructor-arg name="password" value="mysql"/>
-        <constructor-arg name="schema" value="gyms"/>
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <bean id="scraper" class="org.pgp.scrape.PokemonGoMapInfoScraper">
+        <constructor-arg name="divideThreshold" value="350"/>
+        <constructor-arg name="userId" value="dfb4cc00d23da35e738b634a55de2052a1523493198"/>
+        <constructor-arg name="sessionId" value="q8b5ls9aahr4m4c81ja7do5455"/>
     </bean>
 </beans>
